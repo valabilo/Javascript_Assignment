@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-------Activity5------->
+    <script>
+        // input the date
+            let n = parseInt(prompt("Enter month ; "));
+            let year = parseInt(prompt("Enter year; "));
+            let days;
+        // check conditions 
+                if (n==1 ||  n==3 || n==5 || n== 7 || n==8 || n==10 || n==12){
+                    days = 31  + " days";       // months with 31 days
+                }else if (n==4 ||  n==6 || n==9 || n== 11) {
+                    days = 30 + " days";        // months with 30 days
+                }else if((n==2) && ((year%4 == 0) && (year%100 !=0)) || (year%400 == 0)){
+                    days = 29  + " days";       // leap year
+                }else if ((n==2) || ((year%4 == 0) && (year%100 !=0)) || (year%400 == 0)){
+                    days = 28  + " days";       // not leap year        
+                }else {
+                    days = "Invalid month";     // invalid month input
+                }
+        // display the days 
+            console.log("That date has: " + days)
+        </script>
+</body>
+</html>

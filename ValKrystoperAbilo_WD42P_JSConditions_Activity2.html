@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-------Activity2------->
+     <script> 
+        // input number   
+            let num1 = parseInt(prompt("Enter first number: "));
+            let num2 = parseInt(prompt("Enter second number: "));
+            let num3 = parseInt(prompt("Enter third number: "));
+            let largest;
+        // check the condition
+            if(num1 >= num2 && num1 >= num3) {
+                largest = num1;
+                }else if (num2 >= num1 && num2 >= num3) {
+                    largest = num2;
+                    }else {
+                        largest = num3;
+                    }
+        // display the result
+            console.log("The largest number is " + largest);
+        </script>
+</body>
+</html>
